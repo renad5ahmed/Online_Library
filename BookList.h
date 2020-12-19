@@ -1,4 +1,9 @@
 #pragma once
+#include <string>
+#include "Book.h"
+#include "User.h"
+using namespace std;
+
 class BookList
 {
 private:
@@ -16,10 +21,6 @@ public:
 	Book& operator [ ] (int position);
 	friend ostream& operator<<(ostream& output, BookList& booklist); //to display all books
 	~BookList();
-
-
-
-
 
 };
 
